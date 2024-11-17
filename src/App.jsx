@@ -9,11 +9,19 @@ const App = () => {
     {id: 2, name: "Phone", price: 700, description: "A minimal smartphone"},
   ]);
 
+  //add new product
+
+  const addProduct = (newProduct) => {
+    setProducts([
+      products,
+      {id: products.length + 1, newProduct}
+    ]);
+  };
   return (
     <div>
       <h1>Product Dashboard</h1>
       <ProductList products={products} />
-      <AddproductForm />
+      <AddproductForm onAddProduct={addProduct} />
     </div>
   );
 };
