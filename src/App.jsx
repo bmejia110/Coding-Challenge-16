@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import productList from './ProductList';
+import ProductList from './ProductList';
 import AddproductForm from './AddProductForm';
 
 
