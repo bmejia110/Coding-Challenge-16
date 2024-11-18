@@ -13,8 +13,8 @@ const App = () => {
 
   const addProduct = (newProduct) => {
     setProducts([
-      products,
-      {id: products.length + 1, newProduct}
+      ...products,
+      {id: products.length + 1, ...newProduct}
     ]);
   };
   return (

@@ -5,15 +5,17 @@ function ProductList({products}) {
     return (
         <div>
             <h2>Product List</h2>
+            {products.length === 0 ? (
+                <p>No products available</p>
+            ) : (
             <ul>
                 {products.map((product)=> (
-                    <li key={product.id}>
-                        <strong>{product.name}</strong>: ${product.price} - {product.description}
-                    </li>
+                        <ProductItem key={product.id} product={product} />
                 ))}
             </ul>
+            )}
         </div>
-    )
+    );
 }
 
 export default ProductList
