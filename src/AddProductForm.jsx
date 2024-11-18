@@ -41,3 +41,5 @@ const AddProductForm = ({ onAddProduct }) => {
         );
     };
 
+export default AddProductForm;
+
