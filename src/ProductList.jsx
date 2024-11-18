@@ -1,4 +1,5 @@
 import React from "react";
+import ProductItem from "./ProductItem";
 
 
 function ProductList({products}) {
@@ -18,4 +19,4 @@ function ProductList({products}) {
     );
 }
 
-export default ProductList
+export default ProductList;
